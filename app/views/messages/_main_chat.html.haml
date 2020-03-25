@@ -1,0 +1,36 @@
+.main-chat
+  .main-chat__group-info
+    .group-detail
+      test
+      %ul.group-detail__member
+        Member：
+        %li.group-detail__name
+          shin
+    = link_to '#', class: "group-edit" do
+      Edit
+  .main-chat__member-message
+    .member
+      .member__name
+        shin 
+      .member__timestamp
+        2020/03/24(Tue) 19:57:01
+    .message
+      .message__content
+        こんばんは
+    .member
+      .member__name
+        okazaki
+      .member__timestamp
+        2020/03/24(Tue) 19:57:01
+    .message
+      .message__content
+        おはようございます
+  .main-chat__message-form
+    .form
+      .input-box
+        %input.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
+        %label.input-box__file
+          = icon('fas', 'image', class: 'input-box__file__awesome-image')
+          %input.input-box__file__form{type: "file"}
+      %input.submit-btn{:name => "commit", :type => "submit", :value => "Send"}/
+      #999999
