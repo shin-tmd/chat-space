@@ -28,9 +28,9 @@
   .main-chat__message-form
     .form
       .input-box
-        %input.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
+        -# %input.input-box__text{:name => "message[content]", :placeholder => "type a message", :type => "text"}/
+        %input.input-box__text{name: "message[content]", placeholder: "type a message", type: "text"}/
         %label.input-box__file
           = icon('fas', 'image', class: 'input-box__file__awesome-image')
           %input.input-box__file__form{type: "file"}
-      %input.submit-btn{:name => "commit", :type => "submit", :value => "Send"}/
-      #999999
+      %input.submit-btn{name: "commit", type: "submit", value: "Send"}/
