@@ -57,3 +57,6 @@ gem 'haml-rails'
 
 # font-awesomeの導入
 gem 'font-awesome-sass'
+
+# User管理のためdeviseを導入
+gem 'devise'
