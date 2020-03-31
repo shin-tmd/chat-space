@@ -4,23 +4,15 @@
       .top-items__name
         = current_user.name
       .top-items__icons
-        = link_to "#", class: "top-items__btn" do
+        = link_to new_group_path, class: "top-items__btn" do
           %i.fas.fa-edit.top-items__btn--icon
         = link_to "/users/#{current_user.id}/edit", class: "top-items__btn" do
           %i.fa.fa-cog.top-items__btn--icon
   .side-bar__group-list
-    .group
-      .group__list
-        techcamp
-      .group__message
-        まだメッセージがありません
-    .group
-      .group__list
-        techcamp
-      .group__message
-        まだメッセージがありません
-    .group
-      .group__list
-        techcamp
-      .group__message
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__list
+            = group.name
+          .group__message
+            メッセージはまだありません。

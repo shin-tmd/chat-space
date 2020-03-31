@@ -60,3 +60,6 @@ gem 'font-awesome-sass'
 
 # User管理のためdeviseを導入
 gem 'devise'
+
+# デバッグツールのインストール
+gem 'pry-rails'
