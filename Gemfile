@@ -63,3 +63,7 @@ gem 'devise'
 
 # デバッグツールのインストール
 gem 'pry-rails'
+
+# 画像送信機能のツール
+gem 'carrierwave'
+gem 'mini_magick'
