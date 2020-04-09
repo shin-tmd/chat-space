@@ -56,6 +56,9 @@ $gray: #999999;
     background-color: #2f3e51;
     .group {
       padding: 20px 20px 40px;
+      .group__lists {
+        text-decoration: none;
+      }
       &__list {
         font-size: 15px;
         padding-bottom: 5px;
