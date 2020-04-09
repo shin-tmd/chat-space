@@ -42,7 +42,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'factory_bot_rails'
   gem 'faker'
-  
+
   gem 'capistrano'
   gem 'capistrano-rbenv'
   gem 'capistrano-bundler'
@@ -81,3 +81,6 @@ gem 'pry-rails'
 # 画像送信機能のツール
 gem 'carrierwave'
 gem 'mini_magick'
+
+# 外部のストレージを選択しアップロードするのを支援するツール
+gem 'fog-aws'
