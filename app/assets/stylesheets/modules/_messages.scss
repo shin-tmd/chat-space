@@ -52,6 +52,9 @@ $gray: #999999;
   }
   // 各グループ名表示
   &__group-list {
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: scroll;
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     .group {
